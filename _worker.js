@@ -1356,7 +1356,7 @@ function subAddresses(host,UUID,noTLS,newAddressesapi,newAddressescsv,newAddress
 				节点备注 = ` 已启用临时域名中转服务，请尽快绑定自定义域！`;
 			}
 
-			const vlessLink = `vless://${UUID}@${address}:${port}?encryption=none&security=&type=ws&host=${伪装域名}&path=${encodeURIComponent(最终路径)}#${encodeURIComponent(addressid + 节点备注)}`;
+			//const vlessLink = `vless://${UUID}@${address}:${port}?encryption=none&security=&type=ws&host=${伪装域名}&path=${encodeURIComponent(最终路径)}#${encodeURIComponent(addressid + 节点备注)}`;
 			const vlessLink = `vless://${uuid}@${address}:${port}?encryption=none&security=&type=ws&host=${host}&path=${encodeURIComponent(path)}#${encodeURIComponent(addressid + EndPS)}`;
 			
 			return vlessLink;
